@@ -44,10 +44,18 @@ body {
 
 .logo {
     height: 35px;
+    animation: fadeIn .75s ease-in;
 }
 
-.logo:hover {
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .text-box {
