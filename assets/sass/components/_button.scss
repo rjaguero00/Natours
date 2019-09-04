@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -34,6 +35,15 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+
     &::after {
         content: "";
         display: inline-block;
@@ -64,7 +74,7 @@
         text-decoration: none;
         border-bottom: 1px solid $color-primary;
         padding: 3px;
-        transition: 1ll .2s;
+        transition: all .2s;
     }
 
     &:hover {
